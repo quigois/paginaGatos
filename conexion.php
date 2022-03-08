@@ -10,7 +10,7 @@ $dbname="gatos";
 $con = new mysqli($host, $user, $password, $dbname, $port, $socket)
 	or die ('Could not connect to the database server' . mysqli_connect_error());
 
-//$con->close();
+
 $query = "SELECT img,nombre,texto FROM gatos.informacion order by rand()";
 mysqli_set_charset($con, "utf8"); //formato de datos utf8
 
